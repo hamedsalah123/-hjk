@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+.nav-link{
+    font-size: 22px;
+}
+.carousel-item{
+    height: 500px;
+}
+
+
+.footer {
+    background-color: #343a40; /* لون خلفية الفوتر */
+}
+
+.footer h5 {
+    color: #ffffff; /* لون عناوين الأقسام */
+    margin-bottom: 20px;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #ffffff; /* لون الروابط */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ffc107; /* لون الروابط عند التمرير */
+}
+
+.footer .fab, .footer .fas {
+    margin-left: 10px; /* مسافة بين الأيقونة والنص */
+}

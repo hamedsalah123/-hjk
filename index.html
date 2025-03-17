@@ -1,0 +1,308 @@
+\<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الملابس</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">متجر الملابس</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-5 pt-3 active" href="#products">المنتجات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-5 pt-3" href="#cart">سلة التسوق</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-5 pt-3" href="#payment">الدفع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-5 pt-3" href="#login">تسجيل الدخول</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- سلايدر -->
+    <section>
+        
+    <!-- سلايدر شو -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- الصورة الأولى -->
+            <div class="carousel-item active">
+                <img src="./img/تنزيل.jpg" class="d-block w-100" alt="ملابس 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>قميص رجالي</h5>
+                    <p>تصميم أنيق وعصري.</p>
+                </div>
+            </div>
+            <!-- الصورة الثانية -->
+            <div class="carousel-item">
+                <img src="./img/images.jpg"class="d-block w-100" alt="ملابس 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>فستان نسائي</h5>
+                    <p>فستان أنيق للنساء.</p>
+                </div>
+            </div>
+            <!-- الصورة الثالثة -->
+            <div class="carousel-item">
+                <img src="./img/للل.jpg" class="d-block w-100" alt="ملابس 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>جاكيت شتوي</h5>
+                    <p>جاكيت دافئ ومريح.</p>
+                </div>
+            </div>
+        </div>
+        <!-- أزرار التحكم -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">السابق</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">التالي</span>
+        </button>
+    </div>
+    </section>
+    <!-- قسم المنتجات -->
+    <section id="products" class="container my-5">
+        <h2 class="text-center">أحدث المنتجات</h2>
+        <div class="row">
+            <!-- منتج 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/تنزيل (1).jpg" class="card-img-top" alt="قميص رجالي">
+                    <div class="card-body">
+                        <h5 class="card-title">جاكيت رجالي</h5>
+                        <p class="card-text"> جاكيت بجودة عالية.</p>
+                        <p class="card-text">السعر: 50 ريال</p>
+                        <button class="btn btn-success" onclick="addToCart('قميص رجالي', 50)">إضافة إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/تنزيل.jpg" class="card-img-top" alt="قميص رجالي">
+                    <div class="card-body">
+                        <h5 class="card-title">قميص رجالي</h5>
+                        <p class="card-text">قميص رجالي بجودة عالية.</p>
+                        <p class="card-text">السعر: 50 ريال</p>
+                        <button class="btn btn-success" onclick="addToCart('قميص رجالي', 50)">إضافة إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+            <!-- منتج 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/تنزيل.jpg" class="card-img-top" alt="قميص رجالي">
+                    <div class="card-body">
+                        <h5 class="card-title">قميص رجالي</h5>
+                        <p class="card-text">قميص رجالي بجودة عالية.</p>
+                        <p class="card-text">السعر: 50 ريال</p>
+                        <button class="btn btn-success" onclick="addToCart('قميص رجالي', 50)">إضافة إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/تنزيل.jpg" class="card-img-top" alt="قميص رجالي">
+                    <div class="card-body">
+                        <h5 class="card-title">قميص رجالي</h5>
+                        <p class="card-text">قميص رجالي بجودة عالية.</p>
+                        <p class="card-text">السعر: 50 ريال</p>
+                        <button class="btn btn-success" onclick="addToCart('قميص رجالي', 50)">إضافة إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/تنزيل.jpg" class="card-img-top" alt="قميص رجالي">
+                    <div class="card-body">
+                        <h5 class="card-title">قميص رجالي</h5>
+                        <p class="card-text">قميص رجالي بجودة عالية.</p>
+                        <p class="card-text">السعر: 50 ريال</p>
+                        <button class="btn btn-success" onclick="addToCart('قميص رجالي', 50)">إضافة إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/تنزيل.jpg" class="card-img-top" alt="قميص رجالي">
+                    <div class="card-body">
+                        <h5 class="card-title">قميص رجالي</h5>
+                        <p class="card-text">قميص رجالي بجودة عالية.</p>
+                        <p class="card-text">السعر: 50 ريال</p>
+                        <button class="btn btn-success" onclick="addToCart('قميص رجالي', 50)">إضافة إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+            <!-- يمكنك إضافة المزيد من المنتجات هنا -->
+        </div>
+    </section>
+    <!-- مدونه -->
+     <section>
+        <div class="container">
+            <h1>مدونه</h1>
+        <div class="row">
+            <div class="col-md-6 px-5">
+                <p>
+                    "سترة أنيقة وعصرية مصممة لتوفر لك الدفء والراحة مع 
+                    الحفاظ على مظهرك الأن
+                    يق. مصنوعة من أقمشة عالية الجودة، تتميز هذه السترة بتصميمها العملي الذي يناسب جميع
+                     المناسبات، سواء كنت في العمل أو في نزهة خارجية. تأتي السترة بتفاصيل دقيقة مثل 
+                    أزرار متينة، جيبين أماميين لتخزين أغراضك الصغيرة، وقلنسوة قابلة
+                     للإزالة للحماية من العوامل الجوية. متوفرة بعدة ألوان تناسب
+                     جميع الأذواق، مما يجعلها إضافة مثالية لخزانة ملابسك."</p>
+            </div>
+            <div class="col-md-6 px-5">
+                <img src="./img/للل.jpg" alt="">
+            </div>
+        </div>
+    </div>
+     </section>
+
+    <!-- قسم سلة التسوق -->
+    <section id="cart" class="container my-5">
+        <h2>سلة التسوق</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>المنتج</th>
+                    <th>السعر</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- العناصر تضاف هنا عبر JavaScript -->
+            </tbody>
+        </table>
+        <p>المجموع: <span id="total">0</span> ريال</p>
+    </section>
+
+    <!-- قسم الدفع -->
+    <section id="payment" class="container my-5">
+        <h2>الدفع</h2>
+        <form>
+            <div class="mb-3">
+                <label for="cardNumber" class="form-label">رقم البطاقة</label>
+                <input type="text" class="form-control" id="cardNumber" required>
+            </div>
+            <div class="mb-3">
+                <label for="expiryDate" class="form-label">تاريخ الانتهاء</label>
+                <input type="text" class="form-control" id="expiryDate" required>
+            </div>
+            <div class="mb-3">
+                <label for="cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cvv" required>
+            </div>
+            <button type="submit" class="btn btn-primary">دفع</button>
+        </form>
+    </section>
+
+    <!-- قسم تسجيل الدخول -->
+    <section id="login" class="container my-5">
+        <h2>تسجيل الدخول</h2>
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">كلمة المرور</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+        </form>
+    </section>
+
+    <!-- تذييل الصفحة -->
+     <!-- الفوتر -->
+     <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <!-- معلومات الاتصال -->
+                <div class="col-md-4 mb-4">
+                    <h5>معلومات الاتصال</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> العنوان: الرياض، السعودية</li>
+                        <li><i class="fas fa-phone"></i> الهاتف: +966 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> البريد: info@example.com</li>
+                    </ul>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div class="col-md-4 mb-4">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">الرئيسية</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">المنتجات</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">عنا</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- روابط التواصل الاجتماعي -->
+                <div class="col-md-4 mb-4">
+                    <h5>تابعنا</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none"><i class="fab fa-facebook"></i> فيسبوك</a></li>
+                        <li><a href="#" class="text-white text-decoration-none"><i class="fab fa-twitter"></i> تويتر</a></li>
+                        <li><a href="#" class="text-white text-decoration-none"><i class="fab fa-instagram"></i> إنستغرام</a></li>
+                        <li><a href="#" class="text-white text-decoration-none"><i class="fab fa-youtube"></i> يوتيوب</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- حقوق النشر -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2023 متجر الملابس. جميع الحقوق محفوظة.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script>
+        let cart = [];
+
+function addToCart(productName, price) {
+    cart.push({ name: productName, price: price });
+    updateCart();
+    alert(`${productName} تمت إضافته إلى السلة`);
+}
+
+function updateCart() {
+    const cartItems = document.getElementById('cart-items');
+    const totalElement = document.getElementById('total');
+    let total = 0;
+
+    cartItems.innerHTML = '';
+    cart.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${item.name}</td>
+            <td>${item.price} ريال</td>
+        `;
+        cartItems.appendChild(row);
+        total += item.price;
+    });
+
+    totalElement.textContent = total;
+}
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
